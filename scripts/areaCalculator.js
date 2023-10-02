@@ -28,3 +28,12 @@ function calculateRectangleArea() {
     setArea("rectangle-area", area);
   }
 }
+
+function calculateParallelogramArea() {
+  const base = getInputValue("parallelogram-base");
+  const height = getInputValue("parallelogram-height");
+  if (base && height) {
+    const area = base * height;
+    setArea("parallelogram-area", area);
+  }
+}
