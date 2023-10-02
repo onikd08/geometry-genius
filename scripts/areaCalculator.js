@@ -19,3 +19,12 @@ function calculateTriangleArea() {
     setArea("triangle-area", area);
   }
 }
+
+function calculateRectangleArea() {
+  const width = getInputValue("rectangle-width");
+  const length = getInputValue("rectangle-length");
+  if (width && length) {
+    const area = width * length;
+    setArea("rectangle-area", area);
+  }
+}
