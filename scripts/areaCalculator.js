@@ -6,11 +6,16 @@ function getInputValue(inputFiledId) {
   }
 }
 
+function setArea(areaId, value) {
+  const textField = document.getElementById(areaId);
+  textField.innerText = value;
+}
+
 function calculateTriangleArea() {
   const base = getInputValue("triangle-base");
   const height = getInputValue("triangle-height");
   if (base && height) {
     const area = 0.5 * base * height;
-    console.log(area);
+    setArea("triangle-area", area);
   }
 }
