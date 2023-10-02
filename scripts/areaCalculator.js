@@ -8,7 +8,8 @@ function getInputValue(inputFiledId) {
 
 function setArea(areaId, value) {
   const textField = document.getElementById(areaId);
-  textField.innerText = value;
+  const area = value.toFixed(2);
+  textField.innerText = area;
 }
 
 function calculateTriangleArea() {
@@ -53,5 +54,14 @@ function calculatePentagonArea() {
   if (p && a) {
     const area = 0.5 * p * a;
     setArea("pentagon-area", area);
+  }
+}
+
+function calculateEllipseArea() {
+  const a = getInputValue("ellipse-a");
+  const b = getInputValue("ellipse-b");
+  if (b && a) {
+    const area = Math.PI * b * a;
+    setArea("ellipse-area", area);
   }
 }
