@@ -37,3 +37,12 @@ function calculateParallelogramArea() {
     setArea("parallelogram-area", area);
   }
 }
+
+function calculateRhombusArea() {
+  const d1 = getInputValue("rhombus-diagonal-1");
+  const d2 = getInputValue("rhombus-diagonal-2");
+  if (d1 && d2) {
+    const area = 0.5 * d1 * d2;
+    setArea("rhombus-area", area);
+  }
+}
