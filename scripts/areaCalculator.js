@@ -46,3 +46,12 @@ function calculateRhombusArea() {
     setArea("rhombus-area", area);
   }
 }
+
+function calculatePentagonArea() {
+  const p = getInputValue("pentagon-perimeter");
+  const a = getInputValue("pentagon-apothem");
+  if (p && a) {
+    const area = 0.5 * p * a;
+    setArea("pentagon-area", area);
+  }
+}
