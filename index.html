@@ -11,5 +11,29 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body class="max-w-screen-2xl mx-auto">
+    <header></header>
+
+    <main class="flex flex-col md:flex-row mt-5 mx-2 lg:mx-0 gap-6">
+      <div class="md:flex-1 grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div class="card bg-base-100 border border-gray-200">
+          <figure class="px-10 pt-10">
+            <img src="./images/triangle.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Triangle</h2>
+            <small>Area (A) = 0.5 x b x h</small>
+            <div class="card-actions w-full">
+              <button
+                class="btn bg-[#1090D8] text-white hover:bg-blue-400 w-full"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-80">area calculator</div>
+    </main>
+  </body>
 </html>
